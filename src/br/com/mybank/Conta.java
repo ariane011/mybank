@@ -2,9 +2,10 @@ package br.com.mybank;
 
 public class Conta {
 
+	public int idConta;
     private double saldo;
     public double valor;
-    public int idConta;
+    
     
 	public double getSaldo() {
 		return saldo;
@@ -28,9 +29,13 @@ public class Conta {
 	}
 	
     public void tranfere(Conta origin, Conta destiny, double valor) {
-    	
     	origin.saca(valor);
     	destiny.deposita(valor);
     }
     
+  //Reescrevendo o 
+  	@Override
+  	public String toString() {
+  		return "Nome: " + idConta + " Saldo: " + saldo;
+  	}
 }

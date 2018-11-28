@@ -2,7 +2,7 @@ package br.com.mybank;
 
 public class Cliente {
 	private String nome;
-	private String CPF;
+	private String cpf;
 
 	public String getNome() {
 		return nome;
@@ -13,12 +13,19 @@ public class Cliente {
 	}
 
 	public String getCPF() {
-		return CPF;
+		return cpf;
 	}
 
 	public void setCPF(String cPF) {
-		CPF = cPF;
+		cpf = cPF;
 	}
-
-
+	
+	//Criar o medoto que cadastrar um clientes 
+	
+	//Reescrevendo 
+	@Override
+	public String toString() {
+		return "Nome: " + nome + " CPF: " + cpf;
+	}
+	
 }
