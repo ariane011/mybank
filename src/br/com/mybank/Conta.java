@@ -2,22 +2,20 @@ package br.com.mybank;
 
 public class Conta {
 
-	public int idConta;
+	private int idConta;
     private double saldo;
-    public double valor;
-    
-    
+
 	public double getSaldo() {
 		return saldo;
 	}
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-	public double getValor() {
-		return valor;
+	public int getIdConta() {
+		return idConta;
 	}
-	public void setValor(double valor) {
-		this.valor = valor;
+	public void setIdConta(int idConta) {
+		this.idConta = idConta;
 	}
 	
 	public void deposita(double valor) {
@@ -36,6 +34,15 @@ public class Conta {
   //Reescrevendo o 
   	@Override
   	public String toString() {
-  		return "Nome: " + idConta + " Saldo: " + saldo;
+  		return "Conta: " + idConta + " Saldo: " + saldo;
   	}
+	public void cadastraConta(int idConta, double saldo) {
+		setIdConta(idConta);
+		setSaldo(saldo);
+	}
+
+	public void consulta(int idConta, double saldo) {
+		getIdConta();
+		getSaldo();
+	}
 }

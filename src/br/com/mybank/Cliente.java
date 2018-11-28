@@ -27,5 +27,12 @@ public class Cliente {
 	public String toString() {
 		return "Nome: " + nome + " CPF: " + cpf;
 	}
+
+	public void cadastraCliente(String nome, String cPF ) {
+	  setNome(nome);
+	  setCPF(cPF);
+		
+	}
+ }
 	
-}
+
