@@ -8,7 +8,7 @@ public class ContaCorrente extends Conta{
     if (conta.saca(valor) > 0){
     	System.out.println("Saque realizado com sucesso!");
     }
-	return this.saldo -= (valor - 0.02);
+	return this.saldo -= (valor + 0.02);
   }
     
 }
