@@ -2,28 +2,18 @@ package br.com.mybank;
 
 public class Conta {
 
-	private int idConta;
-    private double saldo;
+	protected int idConta;
+    protected double saldo;
+    
+    Cliente cliente = new Cliente();
 
-	public double getSaldo() {
-		return saldo;
-	}
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
-	}
-	public int getIdConta() {
-		return idConta;
-	}
-	public void setIdConta(int idConta) {
-		this.idConta = idConta;
+	
+	public double deposita(double valor) {
+		return this.saldo += valor;
 	}
 	
-	public void deposita(double valor) {
-		this.saldo += valor;
-	}
-	
-	public void saca (double valor) {
-		this.saldo -= valor;
+	public double saca (double valor) {
+		return this.saldo -= valor;
 	}
 	
     public void tranfere(Conta origin, Conta destiny, double valor) {
@@ -31,18 +21,18 @@ public class Conta {
     	destiny.deposita(valor);
     }
     
-  //Reescrevendo o 
-  	@Override
-  	public String toString() {
-  		return "Conta: " + idConta + " Saldo: " + saldo;
-  	}
-	public void cadastraConta(int idConta, double saldo) {
-		setIdConta(idConta);
-		setSaldo(saldo);
+    @Override
+    public String toString() {
+    	return "Conta: " + idConta + " , " + "Saldo: " + saldo;
+    }
+    
+	public void cadastraConta(int idConta, Cliente cliente) {
+		this.cliente = cliente;
+		this.idConta = idConta;
+		
 	}
-
-	public void consulta(int idConta, double saldo) {
-		getIdConta();
-		getSaldo();
+    public void consulta(int idConta, double saldo) {
+		this.idConta = idConta;
+		this.saldo = saldo;
 	}
 }

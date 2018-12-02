@@ -12,7 +12,7 @@ public class Cliente {
 		return "Nome: " + nome + " CPF: " + cpf;
 	}
 
-	public void cadastraCliente(String nome, String cPF ) {
+	public void cadastraCliente(String nome, String cpf ) {
         this.nome = nome;
         this.cpf = cpf;
 		
