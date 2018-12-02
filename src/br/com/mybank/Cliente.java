@@ -3,22 +3,6 @@ package br.com.mybank;
 public class Cliente {
 	private String nome;
 	private String cpf;
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getCPF() {
-		return cpf;
-	}
-
-	public void setCPF(String cPF) {
-		cpf = cPF;
-	}
 	
 	//Criar o medoto que cadastrar um clientes 
 	
@@ -29,8 +13,8 @@ public class Cliente {
 	}
 
 	public void cadastraCliente(String nome, String cPF ) {
-	  setNome(nome);
-	  setCPF(cPF);
+        this.nome = nome;
+        this.cpf = cpf;
 		
 	}
  }
