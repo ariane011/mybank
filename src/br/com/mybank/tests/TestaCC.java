@@ -1,7 +1,6 @@
 package br.com.mybank.tests;
 
 import br.com.mybank.Cliente;
-import br.com.mybank.Conta;
 import br.com.mybank.ContaCorrente;
 
 public class TestaCC{
@@ -18,12 +17,12 @@ public class TestaCC{
 		    
 			// Deposita na conta e realiza consulta chamando o objeto CC
 			cc.deposita(100);
-			System.out.println("Deposito realizado com sucesso! Seu saldo é: " + cc.consulta(0001));
+			System.out.println("Deposito realizado com sucesso! Seu saldo ï¿½: " + cc.consulta(0001));
 			
 
 	        // Realiza saque na CONTA CORRENTE
 			cc.saca(50);
-			System.out.println("Saque realizado com sucesso! Seu saldo é: " + cc.consulta(0001));
+			System.out.println("Saque realizado com sucesso! Seu saldo ï¿½: " + cc.consulta(0001));
 			
 			
 	

@@ -23,7 +23,7 @@ public class Conta {
     
     @Override
     public String toString() {
-    	return  "Cliente - " + cliente + " , " + "Conta: " + idConta;
+    	return  "Cliente - " + cliente + " - " + "Conta: " + idConta;
     }
     
 	public void cadastraConta(int idConta, Cliente cliente) {
@@ -32,7 +32,6 @@ public class Conta {
 		
 	}
     public double consulta(int idConta) {
-		this.idConta = idConta;
-		return this.saldo = saldo;
+		return this.saldo;
 	}
 }

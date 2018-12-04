@@ -1,7 +1,6 @@
 package br.com.mybank.tests;
 
 import br.com.mybank.Cliente;
-import br.com.mybank.ContaCorrente;
 import br.com.mybank.ContaInvestimento;
 
 public class TestaContaInvestimento {
@@ -17,7 +16,7 @@ public class TestaContaInvestimento {
 
 	// Deposita na conta e realiza consulta chamando o objeto CC
 	ci.deposita(100);
-	System.out.println("Deposito realizado com sucesso! Seu saldo é: " + ci.consulta(0001));
+	System.out.println("Deposito realizado com sucesso! Seu saldo ï¿½: " + ci.consulta(0001));
 	
 	}
 }
