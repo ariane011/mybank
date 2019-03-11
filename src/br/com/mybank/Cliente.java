@@ -3,8 +3,8 @@ package br.com.mybank;
 public class Cliente {
 	private String nome;
 	private String cpf;
+	private String email;
 	
-	//Testando um merge no git
 	
 	//Criar o medoto que cadastrar um clientes 
 	
@@ -14,11 +14,14 @@ public class Cliente {
 		return "Nome: " + nome + " CPF: " + cpf;
 	}
 
-	public void cadastraCliente(String nome, String cpf ) {
-        this.nome = nome;
-        this.cpf = cpf;
-		
+
+	public Cliente(String nome, String cpf, String email) {
+		super();
+		this.nome = nome;
+		this.cpf = cpf;
+		this.email = email;
 	}
+
  }
 	
 
