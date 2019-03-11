@@ -4,6 +4,8 @@ public class Cliente {
 	private String nome;
 	private String cpf;
 	
+	//Testando um merge no git
+	
 	//Criar o medoto que cadastrar um clientes 
 	
 	//Reescrevendo 
